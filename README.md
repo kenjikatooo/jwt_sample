@@ -37,3 +37,11 @@ $ rails db:create db:migrate db;seed
   - 完成例は以下の通り
   - https://gyazo.com/e6a36d741de50104f8cd8b3e05868582
   
+
+## トラブルシューティング
+
+ - No implicit conversion of nil into string で 500エラーが出る
+   - https://github.com/waiting-for-dev/devise-jwt/issues/56
+   - これを参考にした
+   - `knock.rb` の設定を `Rails.application.credentials.secret_key_base` にしてcredentialを呼び出すように設定し直して、
+   - rails s をもう一度したら直った
