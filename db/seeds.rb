@@ -6,7 +6,7 @@ User.destroy_all
 User.create!({
   name: '田中 太郎',
   email: 'test@user.com',
-  password_digest: 'test123',
+  password: 'test123',
   password_confirmation: 'test123'
 })
 
