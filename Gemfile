@@ -25,6 +25,9 @@ gem 'ffaker'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+# 認証用
+gem 'knock'
+
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
 
