@@ -27,6 +27,7 @@ gem 'ffaker'
 
 # 認証用
 gem 'knock'
+gem 'jsonapi-resources'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
